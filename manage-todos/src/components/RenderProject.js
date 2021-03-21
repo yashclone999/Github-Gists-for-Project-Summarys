@@ -98,7 +98,7 @@ function RenderProject({ id }) {
         return (
             <>
 
-                <div className="container">
+                <div className="container" align="center">
                     
                     <div className="row top-5">
                         <div className="col-sm-5 col-md-6 project" align="left">
@@ -121,7 +121,7 @@ function RenderProject({ id }) {
 
                     
                     <div className="row top-5">
-                        <div className="col-12">
+                        <div className="col-11">
                             <hr style={{
                                 color: '#000000',
                                 backgroundColor: '#000000',
@@ -140,9 +140,9 @@ function RenderProject({ id }) {
                         {project.todos.length > 0 && (
 
                             <div className="row top-5">
-                                <div className="col-6"><h4>Status</h4></div>
-                                <div className="col-3" align="left"> <h4>Created</h4> </div>
-                                <div className="col-3" align="left"> <h4>Updated</h4> </div>
+                                <div className="col-5" align="left"><h5>Status</h5></div>
+                                <div className="col-3" > <h5>Created</h5> </div>
+                                <div className="col-3" > <h5>Updated</h5> </div>
                             </div>
 
                         )}
@@ -150,7 +150,7 @@ function RenderProject({ id }) {
 
                     {pending.length > 0 && (<div className="container">
                         <div className="row top-5" >
-                            <div className="col-6" ><h4> Pending </h4></div>
+                            <div className="col-5" align="left"><h4> Pending </h4></div>
                         </div>
                         {
                             pending.map(todo => {
@@ -162,22 +162,18 @@ function RenderProject({ id }) {
                                                 {isEditOpen && (<input type="checkbox" checked={statusMap.get(todo._id)} onChange={() => setStatusMap(new Map(statusMap.set(todo._id, !statusMap.get(todo._id))))} />)}
                                             </div>
 
-                                            <div className="col-4" align="left">
+                                            <div className="col-3" align="left">
                                                 <span className="todo">{todo.description} </span>
                                             </div>
-                                            <div className="col-.5" align="right">
-                                                <button className="edit" onClick={() => EditTodo(todo._id)}><span className="fa fa-edit fa-md"></span></button>
-                                            </div>
-                                            <div className="col-.5" align="right">
-                                                <button className="delete" onClick={() => dispatch(DeleteTodo(todo._id))}><span className="fa fa-trash fa-md"></span></button>
+                                            <div className="col-1" >
+                                            <button className="edit fa fa-edit fa-md" onClick={() => EditTodo(todo._id)}></button><button className="delete fa fa-trash fa-md" onClick={() => dispatch(DeleteTodo(todo._id))}></button>
                                             </div>
 
-
-                                            <div className="col-3" align="center">
+                                            <div className="col-3" >
                                                 <span className="todo">{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(todo.createdAt)))}</span>
                                             </div>
 
-                                            <div className="col-3" align="center">
+                                            <div className="col-3" >
                                                 <span className="todo">{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(todo.updatedAt)))}</span>
                                             </div>
 
@@ -191,7 +187,7 @@ function RenderProject({ id }) {
 
                     {completed.length > 0 && (<div className="container">
                         <div className="row top-5" >
-                            <div className="col-6" ><h4> Completed </h4></div>
+                            <div className="col-5" align="left"><h4>Completed</h4></div>
                         </div>
                         {
                             completed.map(todo => {
@@ -204,24 +200,20 @@ function RenderProject({ id }) {
                                             {isEditOpen && (<input type="checkbox" checked={statusMap.get(todo._id)} onChange={() => setStatusMap(new Map(statusMap.set(todo._id, !statusMap.get(todo._id))))} />)}
                                         </div>
 
-                                        <div className="col-4" align="left">
+                                        <div className="col-3" align="left">
                                             <span className="todo">{todo.description} </span>
                                         </div>
-
-                                        <div className="col-.5" align="right">
-                                            <button className="edit" onClick={() => EditTodo(todo._id)}><span className="fa fa-edit fa-md"></span></button>
-                                        </div>
-                                        <div className="col-.5" align="right">
-                                            <button className="delete" onClick={() => dispatch(DeleteTodo(todo._id))}><span className="fa fa-trash fa-md"></span></button>
+                                        <div className="col-1" >
+                                            <button className="edit fa fa-edit fa-md" onClick={() => EditTodo(todo._id)}></button><button className="delete fa fa-trash fa-md" onClick={() => dispatch(DeleteTodo(todo._id))}></button>
                                         </div>
 
-                                        <div className="col-3" align="center">
+                                        <div className="col-3" >
                                             <span className="todo">{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(todo.createdAt)))}</span>
                                         </div>
 
-                                        <div className="col-3" align="center">
+                                        <div className="col-3" >
                                             <span className="todo">{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(todo.updatedAt)))}</span>
-                                        </div>
+                                        </div>                                        
 
                                     </div>
 
@@ -292,7 +284,9 @@ function RenderProject({ id }) {
 
                         </div>
 
-                        <div className="col-6" align="right"><button className="button" onClick={edit}>Edit Status</button>{isEditOpen && (<button className="button" onClick={() => updateStatus(statusMap, id)}>Update Status</button>)}</div>
+                        <div className="col-3" align="right"> {isEditOpen && (<button className="button" onClick={() => updateStatus(statusMap, id)}>Update Status</button>)} </div>
+                        <div className="col-3" align="left"><button className="button" onClick={edit}>Edit Status</button></div>
+
                         
                     </div>
 
