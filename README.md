@@ -40,6 +40,8 @@ const config = {
 }
 
 
+*********server/cors.js*********************
+
 
 server/Config.js
 
