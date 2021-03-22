@@ -8,6 +8,7 @@ import RenderProject from './RenderProject';
 import Projects from './projects';
 import { fetchProject } from '../redux/actionCreator';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Authorization } from '../redux/Authorization';
 
 
 const mapStateToProps = state => {
@@ -28,7 +29,10 @@ const mapDispatchToProps = dispatch => {
 class Main extends Component {
     
     componentDidMount() {
-        this.props.fetchProjects();
+
+        if (Authorization.isAuthenticated) {
+            this.props.fetchProjects();
+        }
     }
     
 
