@@ -21,11 +21,11 @@ Move into directories as specified and run npm install
 
 ## Create personal OAUTH App for running the application locally - https://docs.github.com/en/developers/apps/creating-an-oauth-app
 1. Create your OAUTH App on Github and store your clientID and ClientKey - your_clientID, your_client_Key
-2. express-port-number is the port number on which server will run, react-app-port-number is where react app will run
+2. **express-port-number** is the port number on which server will run, **react-app-port-number** is where react app will run
 3. Set Authorization callback URL of your OAUTH app as http://localhost:express-port-number/users/login/callback
 
-## Update files
-Update react-app files and server files with your_clientID, your_client_Key as specified in the Step 1
+## Update files (needed)
+Update react-app files and server files with your_clientID, your_client_Key as specified in the **Step 1**
 
 ## Starting applications
 1. On starting server first, it should run on port 3000 by default. Starting react app second, it should run on 3001.
@@ -36,6 +36,7 @@ Update react-app files and server files with your_clientID, your_client_Key as s
 2. ~/Node/Manage-Todos/manage-todos$ npm start
 
 
+####Follow Steps 2 to 5 if react or express application are not running on poer 3001 and 3000 respectively
 
 ### Step 1: Update files 
 
