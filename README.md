@@ -19,7 +19,7 @@ Move into directories as specified and run npm install
 2. ~/Node/Manage-Todos/server$ npm install 
 
 
-## Create personal OAUTH App for locally running the application - https://docs.github.com/en/developers/apps/creating-an-oauth-app
+## Create personal OAUTH App for running the application locally - https://docs.github.com/en/developers/apps/creating-an-oauth-app
 1. Create your OAUTH App on Github and store your clientID and ClientKey - your_clientID, your_client_Key
 2. Set ExpressServerPort as 3000 
 3. Set Authorization callback URL as http://localhost:ExpressServerPort/users/login/callback
