@@ -1,4 +1,4 @@
-# **Project {{ project_name }}**
+# **{{ project_name }}**
 ___
 
 #### **Summary** {{ completed }}/{{total}} Todos completed
