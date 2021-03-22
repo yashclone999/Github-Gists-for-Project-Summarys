@@ -24,7 +24,7 @@ Move into directories as specified and run npm install
 2. Set ExpressServerPort as 3000 
 3. Set Authorization callback URL as http://localhost:ExpressServerPort/users/login/callback
 
-## Update 
+## Update files
 Update react-app files and server files with your_clientID, your_client_Key as specified in the Step 1
 
 ## Running server and react application
