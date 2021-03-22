@@ -28,9 +28,9 @@ move into server directory and run "npm-install" to setup express server
 
 
 # Create personal OAUTH App for locally running the application - https://docs.github.com/en/developers/apps/creating-an-oauth-app
-Create your OAUTH App on Github and store your clientID and ClientKey - your_clientID, your_client_Key
-Set ExpressServerPort as 3000 
-http://localhost:*ExpressServerPort*/users/login/callback
+1. Create your OAUTH App on Github and store your clientID and ClientKey - your_clientID, your_client_Key
+2. Set ExpressServerPort as 3000 
+3. Set Authorization callback URL as http://localhost:ExpressServerPort/users/login/callback
 
 # Update react-app files and server files with your_clientID, your_client_Key as specified in the Step 1
 
