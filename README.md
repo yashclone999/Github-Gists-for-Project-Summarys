@@ -40,12 +40,12 @@ Update react-app files and server files with your_clientID, your_client_Key as s
 
 ### Step 1: Update files 
 
-In "manage-todos/src/config.js" replace:
+In "your_pwd/Manage-Todos/manage-todos/src/config.js" replace:
 1. port number 3000 with the port number where express server is running
 2. clientID with your_clientID
 3. clientKey with your_client_Key
 
-#### original - manage-todos/src/config.js
+#### original - your_pwd/Manage-Todos/manage-todos/src/config.js
 ```js
 const config = {
     URL : "http://localhost:3000",
@@ -55,7 +55,7 @@ const config = {
     scope : 'gist'
 }
 ```
-#### update - manage-todos/src/config.js
+#### update - your_pwd/Manage-Todos/manage-todos/src/config.js
 ```js
 const config = {
     URL : "http://localhost:{express-port-number}",
@@ -66,7 +66,7 @@ const config = {
 }
 ```
 
-#### update- server/Config.js,
+#### update- your_pwd/Manage-Todos/server/Config.js,
 ```js
 const config = {
 	OAUTH_clientID: "your_clientID",
@@ -84,7 +84,7 @@ const whitelist = ['http://localhost:{react-app-port-number}'];
 
 
 ### Step 3: update
-In server/routes/users.js update port number with react app
+In your_pwd/Manage-Todos/server/routes/users.js update port number
 ```js
 const port = react-app-port-number
 ```
