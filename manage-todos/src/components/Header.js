@@ -34,7 +34,7 @@ class Header extends Component {
 
                         <NavbarToggler onClick={this.toggleNav1} />
 
-                        <NavbarBrand className="mr-auto" href="/"> Gists </NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"> P&T </NavbarBrand>
 
                         <Collapse isOpen={this.state.isOpen} navbar>
                                 <Nav navbar>
@@ -66,8 +66,8 @@ class Header extends Component {
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
-                                <h1>Create Gists</h1>
-                                <p>Manage Projects & Todos</p>
+                                <h1>Projects & Todos</h1>
+                                <p>Manage Projects-Todos, and create Gists </p>
                             </div>
                         </div>
                     </div>
