@@ -1,8 +1,5 @@
 # Manage-Todos
 Manages project and Todos. Adds project summary as gist
-
-How to run:
-
 Prerequisites: npm, node, your own Github OAUTH App
 
 
@@ -17,8 +14,6 @@ move to directory where you want to clone the repository
 
 git clone https://github.com/yashclone999/Manage-Todos.git
 
-
-Once downloaded:
 # Install node_modules
 
 move into manage-todos directory and run "npm-install" to setup react application
