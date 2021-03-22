@@ -8,10 +8,10 @@ router.route('/')
     .options(cors.validateForCORSSelective, (req, res) => {
         res.sendStatus(200);
     })
-    .get(cors.validateForCORSSelective, (req, res, next) => {
+    .get(cors.validateForCORSSelective, authenticate.verifyUsingToken, (req, res, next) => {
         
 
-        Project.find()
+        Project.find({author: req.user._id})
             .populate({ path: 'author', select: 'username' })
             .populate('todos')
             .then((projects) => {
