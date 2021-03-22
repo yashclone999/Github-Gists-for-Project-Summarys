@@ -35,7 +35,7 @@ function LoggedIn() {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-12 top-5"><Link to={`/projects`} ><button className="button" onClick={handle}>To projects</button></Link></div>
+                    <div className="col-12 top-5" align="center"><Link to={`/projects`} ><button className="button" onClick={handle}>Complete Authentication</button></Link></div>
                 </div>
             </div>
         )
