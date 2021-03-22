@@ -29,7 +29,7 @@ Update react-app files and server files with your_clientID, your_client_Key as s
 
 ## Starting applications
 1. On starting server first, it should run on port 3000 by default. Starting react app second, it should run on 3001.
-2. `If any of them run on different port then update the respective port numbers as specified in the following steps 1 to 5`
+2. **If any of them run on different port then update the respective port numbers in files as specified in the following steps 1 to 5**
 
 ## Running server and react application
 1. ~/Node/Manage-Todos/server$ npm start
