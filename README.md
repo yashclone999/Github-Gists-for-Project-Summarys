@@ -32,8 +32,8 @@ Update react-app files and server files with your_clientID, your_client_Key as s
 2. **If any of them run on different port then update the respective port numbers in files as specified in the following steps 1 to 5**
 
 ## Running server and react application
-1. ~/Node/Manage-Todos/server$ npm start
-2. ~/Node/Manage-Todos/manage-todos$ npm start
+1. ~/your_pwd/Manage-Todos/server$ npm start
+2. ~/your_pwd/Manage-Todos/manage-todos$ npm start
 
 
 ####Follow Steps 2 to 5 if react or express application are not running on poer 3001 and 3000 respectively
