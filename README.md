@@ -36,14 +36,16 @@ Update react-app files and server files with your_clientID, your_client_Key as s
 2. If any of them run on different port then update the respective port numbers as specified in the following steps
 
 
-# Step 1: Update files 
+
+## Step 1: Update files 
 
 In "manage-todos/src/config.js" replace:
 1. port number 3000 with the port number where express server is running
 2. clientID with your_clientID
 3. clientKey with your_client_Key
 
-# original
+### original - manage-todos/src/config.js
+```js
 const config = {
     URL : "http://localhost:3000",
     clientID : "32fd305488b209b0d1bb",
@@ -51,19 +53,19 @@ const config = {
     redirectURI : "http://localhost:3000/users/login/callback",
     scope : 'gist'
 }
-
-# update
+```
+### update - manage-todos/src/config.js
+```js
 const config = {
-    URL : "http://localhost:{express_port number}",
+    URL : "http://localhost:{express-port-number}",
     clientID : "your_clientID",
     clientKey : "your_client_Key",
-    redirectURI : "http://localhost:{express_port number}/users/login/callback",
+    redirectURI : "http://localhost:{express-port-number}/users/login/callback",
     scope : 'gist'
 }
- 
+```
 
-Similarly in server/Config.js, update OAUTH_clientID, and OAUTH_clientKey
-# update
+#### update- server/Config.js,
 const config = {
 	OAUTH_clientID: "your_clientID",
 	OAUTH_clientKey: "your_client_Key"
@@ -73,15 +75,17 @@ const config = {
 
 # Step 2: update
 In Manage-Todos/server/cors.js add your react-app port to whitelist
-1. const whitelist = ['http://localhost:{react-app port number}'];
-
+```js
+const whitelist = ['http://localhost:{react-app-port-number}'];
+```
 
 
 
 # Step 3: update
 In server/routes/users.js update port number with react app
-1. const port = react-app port number
-
+```js
+const port = react-app-port-number
+```
 
 # Step 4: Update OAUTH App callback 
 http://localhost:*ExpressServerPort*/users/login/callback
