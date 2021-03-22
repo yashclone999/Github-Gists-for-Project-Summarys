@@ -9,9 +9,7 @@ Manages project and Todos. Adds project summary as gist. Prerequisites are npm, 
 
 
 ## Clone github code 
-move to directory where you want to clone the repository
-
-git clone https://github.com/yashclone999/Manage-Todos.git
+Download the code to your_pwd/
 
 ## Install node_modules
 Move into directories as specified and run npm install
