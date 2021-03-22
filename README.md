@@ -7,8 +7,8 @@ Prerequisites: npm, node, your own Github OAUTH App
 
 
 # Installing node and npm for Ubuntu
-curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
-sudo apt-get install -y nodejs
+1. curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+2. sudo apt-get install -y nodejs
 
 
 
