@@ -15,8 +15,8 @@ git clone https://github.com/yashclone999/Manage-Todos.git
 
 ## Install node_modules
 Move into directories as specified and run npm install
-1. ~/Node/Manage-Todos/manage-todos$ npm install 
-2. ~/Node/Manage-Todos/server$ npm install 
+1. ~/your_pwd/Manage-Todos/manage-todos$ npm install 
+2. ~/your_pwd/Manage-Todos/server$ npm install 
 
 
 ## Create personal OAUTH App for running the application locally - https://docs.github.com/en/developers/apps/creating-an-oauth-app
@@ -95,8 +95,8 @@ http://localhost:express-port-number/users/login/callback
 
 ### Step 5: Running react application and server
 Once setup is complete: 
-1. ~/Node/Manage-Todos/server$ npm start
-2. ~/Node/Manage-Todos/manage-todos$ npm start
+1. ~/your_pwd/Manage-Todos/server$ npm start
+2. ~/your_pwd/Manage-Todos/manage-todos$ npm start
 
 
 
