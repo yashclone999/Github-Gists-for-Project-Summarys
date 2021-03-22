@@ -4,12 +4,11 @@ let initialState = {
     isLoading: false,
     isAuthenticated: localStorage.getItem('token') ? true : false,
     token: localStorage.getItem('token'),
-    isRegistered: false,
     err: null
 }
     
                              
-export const Authorization = (state = {initialState}, action) => {
+export const Authorization = (state = initialState, action) => {
 
     switch (action.type) {
         case actionType.LOGIN_REQUEST:
@@ -24,7 +23,7 @@ export const Authorization = (state = {initialState}, action) => {
                 ...state,
                 isLoading: false,
                 isAuthenticated: true,
-                err: '',
+                err: null,
                 token: action.token
             };
 
@@ -39,8 +38,7 @@ export const Authorization = (state = {initialState}, action) => {
         case actionType.LOGOUT_REQUEST:
             return {
                 ...state,
-                isLoading: true,
-                isAuthenticated: true
+                isLoading: true
             };
 
         case actionType.LOGOUT_SUCCESS:
