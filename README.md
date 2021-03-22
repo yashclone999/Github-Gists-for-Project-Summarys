@@ -89,7 +89,7 @@ const port = react-app-port-number
 ```
 
 ### Step 4: Update OAUTH App callback 
-http://localhost:*ExpressServerPort*/users/login/callback
+http://localhost:express-port-number/users/login/callback
 
 
 ### Step 5: Running react application and server
