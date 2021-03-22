@@ -14,10 +14,8 @@ move to directory where you want to clone the repository
 git clone https://github.com/yashclone999/Manage-Todos.git
 
 # Install node_modules
-
-move into manage-todos directory and run "npm-install" to setup react application
+Move into directories as specified and run npm install
 1. ~/Node/Manage-Todos/manage-todos$ npm install 
-move into server directory and run "npm-install" to setup express server
 2. ~/Node/Manage-Todos/server$ npm install 
 
 
