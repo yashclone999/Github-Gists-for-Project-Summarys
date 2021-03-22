@@ -1,5 +1,5 @@
 # Manage-Todos
-Manages project and Todos. Adds project summary as gist. Prerequisites are npm, node, your own Github OAUTH App
+Manages project and Todos. Adds project summary as gist. Prerequisites are npm, node, your own Github OAUTH App, (git for cloning) 
 
 
 ## Installing node and npm for Ubuntu
