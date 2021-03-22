@@ -30,7 +30,7 @@ class Main extends Component {
     
     componentDidMount() {
 
-        if (Authorization.isAuthenticated) {
+        if (this.props.Authorization.isAuthenticated === true) {
             this.props.fetchProjects();
         }
     }
