@@ -1,6 +1,6 @@
 import React, {useEffect } from 'react';
 import { useDispatch} from 'react-redux';
-import { loginSuccess } from '../redux/actionCreator';
+import { loginSuccess, fetchProject } from '../redux/actionCreator';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -19,6 +19,7 @@ function LoggedIn() {
 
     const handle = () => {
         dispatch(loginSuccess(token));
+        dispatch(fetchProject());
     }
 
 
