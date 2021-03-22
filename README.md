@@ -22,9 +22,9 @@ Once downloaded:
 # Install node_modules
 
 move into manage-todos directory and run "npm-install" to setup react application
-*~/Node/Manage-Todos/manage-todos$ npm install *
+~/Node/Manage-Todos/manage-todos$ npm install 
 move into server directory and run "npm-install" to setup express server
-*~/Node/Manage-Todos/server$ npm install *
+~/Node/Manage-Todos/server$ npm install 
 
 
 # Create personal OAUTH App for locally running the application - https://docs.github.com/en/developers/apps/creating-an-oauth-app
@@ -76,24 +76,21 @@ const config = {
 	OAUTH_clientKey: "your_client_Key"
 }
 
---
 
 In Manage-Todos/server/cors.js add your react-app port to whitelist
 # Step 2: update
 const whitelist = ['http://localhost:{react-app port number}'];
 
--- 
+
 
 In server/routes/users.js update port number with react app
 # Step 3: update
 const port = react-app port number
 
---
 
 # Step 4: Update OAUTH App callback 
 http://localhost:*ExpressServerPort*/users/login/callback
 
---
 
 # Step 5: Running react application and server
 Once setup is complete: 
