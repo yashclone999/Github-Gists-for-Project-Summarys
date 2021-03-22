@@ -22,17 +22,8 @@ const useStyles = makeStyles({
     root: {
         maxWidth: 345,
     },
-    media: {
-        height: 0,
-        paddingTop: '56.25%', 
-    },
-    
     avatar: {
         backgroundColor: red[500],
-    },
-
-    LargeIcon: {
-        fontSize: "1em"
     }
 });
 
