@@ -24,15 +24,16 @@ Move into directories as specified and run npm install
 2. Set ExpressServerPort as 3000 
 3. Set Authorization callback URL as http://localhost:ExpressServerPort/users/login/callback
 
-# Update react-app files and server files with your_clientID, your_client_Key as specified in the Step 1
+# Update 
+Update react-app files and server files with your_clientID, your_client_Key as specified in the Step 1
 
 # Running server and react application
 1. ~/Node/Manage-Todos/server$ npm start
 2. ~/Node/Manage-Todos/manage-todos$ npm start
 
-
-On starting server first, it will run on port 3000. Starting react app second, it will run on 3001.
-If any of them run on different port then update the respective port numbers as specified in the following steps
+# Conditional
+1. On starting server first, it will run on port 3000. Starting react app second, it will run on 3001.
+2. If any of them run on different port then update the respective port numbers as specified in the following steps
 
 
 # Step 1: Update files 
@@ -69,15 +70,17 @@ const config = {
 }
 
 
-In Manage-Todos/server/cors.js add your react-app port to whitelist
+
 # Step 2: update
-const whitelist = ['http://localhost:{react-app port number}'];
+In Manage-Todos/server/cors.js add your react-app port to whitelist
+1. const whitelist = ['http://localhost:{react-app port number}'];
 
 
 
-In server/routes/users.js update port number with react app
+
 # Step 3: update
-const port = react-app port number
+In server/routes/users.js update port number with react app
+1. const port = react-app port number
 
 
 # Step 4: Update OAUTH App callback 
