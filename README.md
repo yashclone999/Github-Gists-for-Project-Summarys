@@ -36,7 +36,7 @@ Update react-app files and server files with your_clientID, your_client_Key as s
 2. ~/your_pwd/Manage-Todos/manage-todos$ npm start
 
 
-####Follow Steps 2 to 5 if react or express application are not running on poer 3001 and 3000 respectively
+#### Follow Steps 2 to 5 if react or express application are not running on poer 3001 and 3000 respectively
 
 ### Step 1: Update files 
 
