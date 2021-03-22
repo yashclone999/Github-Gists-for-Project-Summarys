@@ -22,9 +22,9 @@ Once downloaded:
 # Install node_modules
 
 move into manage-todos directory and run "npm-install" to setup react application
-~/Node/Manage-Todos/manage-todos$ npm install 
+1. ~/Node/Manage-Todos/manage-todos$ npm install 
 move into server directory and run "npm-install" to setup express server
-~/Node/Manage-Todos/server$ npm install 
+2. ~/Node/Manage-Todos/server$ npm install 
 
 
 # Create personal OAUTH App for locally running the application - https://docs.github.com/en/developers/apps/creating-an-oauth-app
@@ -35,8 +35,8 @@ http://localhost:*ExpressServerPort*/users/login/callback
 # Update react-app files and server files with your_clientID, your_client_Key as specified in the Step 1
 
 # Running server and react application
-~/Node/Manage-Todos/server$ npm start
-~/Node/Manage-Todos/manage-todos$ npm start
+1. ~/Node/Manage-Todos/server$ npm start
+2. ~/Node/Manage-Todos/manage-todos$ npm start
 
 
 On starting server first, it will run on port 3000. Starting react app second, it will run on 3001.
@@ -94,8 +94,8 @@ http://localhost:*ExpressServerPort*/users/login/callback
 
 # Step 5: Running react application and server
 Once setup is complete: 
-~/Node/Manage-Todos/server$ npm start
-~/Node/Manage-Todos/manage-todos$ npm start
+1. ~/Node/Manage-Todos/server$ npm start
+2. ~/Node/Manage-Todos/manage-todos$ npm start
 
 
 
