@@ -2,8 +2,7 @@
 https://thirsty-wright-480b90.netlify.app
 
 ## Manage-Todos- React, Node, MongoDB
-Manages project and Todos. Adds project summary as gist. Prerequisites are npm, node, your own Github OAUTH App
-
+Full-stack application developed using React and Redux for frontend, express framework in Nodejs for backend, and MongoDB Atlas as the database. The application allows users to create projects, and inside projects - create, edit, update and delete todos. Users can then create Github gists to capture the project summaries. Implemented using GitHub-OAUTH API and JWT token to support multi-user authorization, authentication, and other functionalities.
 
 ## Installing node and npm for Ubuntu
 1. curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
