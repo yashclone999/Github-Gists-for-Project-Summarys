@@ -1,4 +1,4 @@
-## Checkout the app (supports mobile, tablets and computer screens) -
+## Checkout the app (supports mobile, tablet and computer screens) -
 https://thirsty-wright-480b90.netlify.app
 
 ## Manage-Todos- React, Node, MongoDB
