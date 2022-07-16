@@ -1,4 +1,4 @@
-## To checkout the app visit -
+## Checkout the app -
 https://thirsty-wright-480b90.netlify.app
 
 ## Manage-Todos- React, Node, MongoDB
