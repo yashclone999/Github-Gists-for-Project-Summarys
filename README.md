@@ -1,6 +1,3 @@
-## Checkout the app (supports mobile, tablet and desktop screens) -
-https://thirsty-wright-480b90.netlify.app
-
 ## Manage-Todos | React, Node, MongoDB
 Full-stack application developed using React and Redux for frontend, express framework in Nodejs for backend, and MongoDB Atlas as the database. The application allows users to create projects, and inside projects - create, edit, update and delete todos. Users can then create Github gists to capture the project summaries. Implemented using GitHub-OAUTH API and JWT token to support multi-user authorization, authentication, and other functionalities.
 
@@ -99,4 +96,5 @@ Once setup is complete:
 2. ~/your_pwd/Manage-Todos/manage-todos$ npm start
 
 
-
+## Checkout the app (supports mobile, tablet and desktop screens) -
+https://thirsty-wright-480b90.netlify.app
